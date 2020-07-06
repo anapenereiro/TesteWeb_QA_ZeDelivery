@@ -1,0 +1,49 @@
+Escolhi para a automação web dos cenários de login, o Selenium Webdriver e a liguagem de programação C#, .NetCore
+utilizando o NUnit,  e o Coypu.
+Essa escolha foi por estar trabalhando com automação web o Selenium Webdriver usando a C#, .NetFramework e o NUnit.
+
+Como configurar o ambiente para a execução da automação dos testes:
+
+Fazer o download do Visual Studio Code na página: 
+https://code.visualstudio.com/
+Escolher o sistema operacional a versão Stable
+E instalar.
+
+Baixar o console emulator, para executar os testes via prompt de comando.
+baixar no site: https://cmder.net/ a versão full, descompactar o arquivo. 
+no diretório c: criar a pasta  Tools e colar a pasta cmder que foi descompactada e criar um atalho na barra de tarefas.
+
+Baixar e Instalar o .Net core. no site https://dotnet.microsoft.com/, opção do Download .Net Core SDK.
+Instalar .
+verificar se o Net Core foi instalado com sucesso.
+Fechar o console emulator caso ele estiver aberto durante a instalação do .Net Core.
+Abrir o console emulator e verificar se o .Net core foi instalado com sucesso.
+digitar no console emulator dotnet -- version 
+
+Verificar se o Visual Studio code solicita a instalação do C# e instalar. se não clicar em extensões e 
+procurar por C# for visual studio code e instalar.
+
+Instalar o o chromedriver:
+acessar: http://chromedriver.storage.googleapis.com/index.html
+Selecionar a versão do seu google chrome e baixar.
+Verificar a versão do google chrome que está utilizando em Menu > Ajuda > Sobre o Google Chrome
+Descompactar a pasta, e recortar o driver e colar em C:\Windows.
+
+Instalar o Coypu:
+No Console emulator, acessar a pasta do projeto
+e executar o comando: Install-Package Coypu -Version 3.1.1.
+
+para executar o teste executar o comando no console emulator:
+dotnet test -l trx -r ./reports
+ou para executar o cenário mais crítico usar o comando: 
+dotnet test -- filter TestCategory = Critical -l trx -r ./reports
+
+lembrando que o console emulator tem que acessar a pasta do projeto baixado do git.
+
+
+
+
+
+
+
+

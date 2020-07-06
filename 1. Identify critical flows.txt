@@ -1,0 +1,31 @@
+Identificar 3 fluxos críticos:
+
+Login - Somente com o usuário cadastrado pelo cliente e logado é possível realizar um pedido. Os erros que podem ocorrer 
+nesse fluxo podem inteferir na experiência do cliente. O sistema deve verificar se o usuário digitou corretamente o e-mail cadastrado e a senha ao 
+realizar o login, caso eles não estejam corretos o sistema deverá exibir mensagem de alerta ao usuário indicando o erro.
+Não informar o usuário que o login ou a senha não foram digitados corretamente é um erro crítico.
+
+Sacola (ou cesta de produtos) - A sacola deve conter os produtos escolhidos pelo cliente no catálogo do site da Zé Delivery, 
+exibindo o valor de cada produto selecionado corretamente, qualquer divergência de valores dos produtos, 
+irá afetar a experiência do cliente, fazendo com que ele desista de realizar o pedido.
+
+Busca por endereço - O catálogo de produtos da zé delivery é exibido depois que o cliente informa o endereço, 
+um erro na localização do endereço o cliente não poderá visualizar os produtos e nem realizar uma compra.
+
+
+E ainda identifiquei esses cenários como críticos:
+
+Realizar pedido (Continuar a comprar) - ao clicar em continuar a comprar o cliente deverá incluir cupom de descontos, 
+incluir endereço de entrega, e selecionar a forma de pagamento, que no caso do site é exibida 
+somente as opções de cartão de crédito ou débito e dinheiro na entrega do pedido. Se o cliente não conseguir selecionar uma 
+forma de pagamento, o pedido não poderá ser concluído.
+
+Catálogo de produtos (vitrine) - Exibir os produtos de forma correta e com os seus valores, se há disponibilidade do produto
+em estoque e retornar a pesquisa do produto corretamente. Na pesquisa de produtos, não retonar o produto pesquisado, 
+a divergência de valores do catálogo com a sacola, não informar de forma clara se o produto está disponível, todos esse
+erros interferem na experiência do cliente.
+
+Cadastro do cliente - O cadastro é um dos fluxos criticos, pois sem ele o cliente não irá conseguir realizar um pedido
+no site, podem haver vários problemas impedindo o cliente de finalizar o cadastro, como informar que o e-mail já foi 
+cadastrado (sendo que ele nunca foi cadastrado), não identificar o código de confirmação enviado para o número que o cliente
+cadastrou.
