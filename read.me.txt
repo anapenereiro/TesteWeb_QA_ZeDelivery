@@ -38,6 +38,8 @@ dotnet test -l trx -r ./reports
 ou para executar o cenário mais crítico usar o comando: 
 dotnet test -- filter TestCategory = Critical -l trx -r ./reports
 
+Todos esses comandos criam a pasta reports e as evidências.
+
 lembrando que o console emulator tem que acessar a pasta do projeto baixado do git.
 
 
